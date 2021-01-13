@@ -1,0 +1,38 @@
+body{
+    background-color: cadetblue;
+    color: black;
+}
+
+p::first-line{
+    color: red;
+}
+
+h5{
+    counter-reset: ncontador;
+}
+
+p.contador::before{
+    content: counter(ncontador) ". ";
+    counter-increment: ncontador;
+    color: black;
+}
+
+h2{
+    text-align: center;
+    color: blue;
+}
+
+a:link{
+    background-color: white;
+    color: blue;
+}
+
+a:visited{
+    background-color: blue;
+    color: white;
+}
+
+img{
+    float: right;
+}
+
